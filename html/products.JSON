@@ -1,0 +1,40 @@
+{
+    "products": [
+        {
+            "name": "Sandberg Mousepad Black (520-05) - Sandberg A/S",
+            "price": "10",
+            "image": "./images/mousepad.jpg",
+            "description": "clean high-quality mousepad for your computer setup"
+        },
+        {
+            "name": "ZOTAC GAMING GeForce RTX 5090 AMP Extreme INFINITY | ZOTAC",
+            "price": "1500",
+            "image": "./images/5090.jpg",
+            "description": "The ZOTAC GAMING GeForce RTX 5090 AMP Extreme INFINITY is the ultimate graphics card for gamers and creators."
+        },
+        {
+            "name": "Y70 - Our New PC Case with LCD Screen - Snow White",
+            "price": "215",
+            "image": "./images/case.jpg",
+            "description": "The Y70 is a new PC case with a built-in LCD screen that displays system information and custom animations."
+        },
+        {
+            "name": "Logitech H390 Wired Headset for PC/Laptop,",
+            "price": "30",
+            "image": "./images/headset.jpg",
+            "description": "The Logitech H390 Wired Headset is a comfortable and versatile headset for PC and laptop users."
+        },
+        {
+            "name": "Newmen GM610 60% wireless Mechanical Gaming Keyboard",
+            "price": "250",
+            "image": "./images/keyboard.jpg",
+            "description": "The Newmen GM610 is a 60% wireless mechanical gaming keyboard with customizable RGB lighting and hot-swappable switches."
+        },
+        {
+            "name": "Razer DeathAdder Essential Gaming-muis",
+            "price": "35",
+            "image": "./images/mouse.jpg",
+            "description": "The Razer DeathAdder Essential is a high-performance gaming mouse with a 6400 DPI optical sensor and ergonomic design."
+        }
+    ]
+}

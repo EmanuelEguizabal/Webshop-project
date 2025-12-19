@@ -1,0 +1,120 @@
+#notification {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #28a745;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+#notification.show {
+    display: block;
+    animation: fadeInOut 3s ease-in-out;
+}
+
+@keyframes fadeInOut {
+    0%, 100% { opacity: 0; transform: translateY(20px); }
+    10%, 90% { opacity: 1; transform: translateY(0); }
+}
+
+.cart-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: 0px;
+    text-align: center;
+}
+
+.cart-table {
+    width: 75%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin: 0 auto;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.cart-table th, .cart-table td {
+    padding: 12px 15px;
+}
+.cart-table th {
+    background-color: #f2f2f2;
+    text-align: left;
+    font-weight: bold;
+}
+.cart-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.leeg{
+    margin-top: 80px;
+    text-align: center;
+    font-size: x-large;
+}
+
+#winkel{
+    margin-bottom: 50px;
+}
+
+.quantity-button {
+    background-color: rgb(29, 146, 255);
+    border: none;
+    color: white;
+    padding: 4px 10px;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.quantity-button:hover {
+    background-color: rgb(0, 121, 235);
+}
+
+.totaal-title{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.totaalprijs{
+    font-size: 20px;
+}
+
+#afrekenen{
+    margin-top: 50px;
+}
+
+#total-box {
+    height: 250px;
+    width: 250px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.line{
+    width: 75%;
+    margin-top: 5px;
+}
+
+.bedankt{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}

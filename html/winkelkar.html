@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Winkelkar</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-200">
+
+    <nav class="relative flex items-center justify-between px-4 bg-gray-200">
+        <a class="text-3xl font-bold" href="index.html">
+            <img src="./images/logo-1.png" alt="Bit Webshop logo" class="h-24 mr-3 lg:ml-40" />
+        </a>
+        <div class="lg:hidden">
+            <button class="flex items-center p-3 text-blue-600 navbar-burger" aria-label="Open menu">
+                <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+        <ul class="hidden lg:flex lg:space-x-6 lg:items-center lg:mx-auto">
+            <li><a class="font-bold text-blue-600" href="index.html">Home</a></li>
+            <li><a class="font-bold text-gray-400 hover:text-blue-500" href="contact.html">Contact</a></li>
+            <li>
+                <a href="winkelkar.html" aria-label="Winkelwagen">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                         stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                              d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 
+                              3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 
+                              2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 
+                              14.25L5.106 5.272M6 20.25a.75.75 0 1 1-1.5 
+                              0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 
+                              1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="relative z-50 hidden transition-transform duration-500 ease-in-out navbar-menu">
+        <div class="fixed inset-0 bg-gray-800 opacity-25 navbar-backdrop"></div>
+        <nav class="fixed top-0 bottom-0 left-0 w-full max-w-sm px-4 pb-4 overflow-y-auto bg-white border-r">
+            <div class="flex items-center justify-between mb-8">
+                <a href="index.html" class="text-3xl font-bold">
+                    <img src="./images/logo-1.png" alt="Bit Webshop logo" class="h-24" />
+                </a>
+                <button class="navbar-close" aria-label="Sluit menu">
+                    <svg class="w-10 h-10 text-gray-400 hover:text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+            <ul>
+                <li class="mb-1">
+                    <a class="block p-4 text-2xl font-bold text-blue-600 hover:bg-blue-50" href="index.html">Home</a>
+                </li>
+                <li class="mb-1">
+                    <a class="block p-4 text-2xl font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600" href="contact.html">Contact</a>
+                </li>
+                <li class="mb-1 flex items-center justify-between px-4">
+                    <a class="text-2xl font-semibold text-gray-400 hover:text-blue-600" href="winkelkar.html">Winkelwagen</a>
+                    <img src="./images/shopping-cart.svg" alt="Shopping cart icon" class="w-7 h-7 cursor-pointer" />
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <main class="flex flex-col items-center mt-20">
+        <h1 class="text-4xl font-bold text-center">Jouw winkelwagen</h1>
+
+        <section class="w-full max-w-4xl px-4 mt-10 mb-10">
+            <div id="cart-container"></div>
+            <div id="total-box" class="flex flex-col items-center mt-6">
+                <h2 class="text-2xl font-semibold">Jouw totaal</h2>
+                <div class="totaalprijs text-xl mt-1"></div>
+                <hr class="w-32 h-px my-4 bg-gray-300 border-0" />
+                <a id="afrekenen" href="./afreken.html" class="px-6 py-2 font-bold text-white bg-blue-500 rounded hover:bg-blue-700 inline-block text-center">
+                    Afrekenen
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <div id="notification" class="fixed bottom-4 right-4 hidden px-4 py-2 text-white bg-green-500 rounded show">Product toegevoegd!</div>
+
+    <script src="./javascript/winkelkar.js"></script>
+    <script>
+        document.querySelector('.navbar-burger')?.addEventListener('click', () => {
+            document.querySelector('.navbar-menu')?.classList.remove('hidden');
+        });
+
+        document.querySelector('.navbar-close')?.addEventListener('click', () => {
+            document.querySelector('.navbar-menu')?.classList.add('hidden');
+        });
+    </script>
+</body>
+</html>
